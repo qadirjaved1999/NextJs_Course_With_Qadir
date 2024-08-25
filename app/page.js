@@ -1,22 +1,7 @@
-"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const flexContainerStyle = {
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    marginTop: '50px'
-  };
-  const navigate = useRouter();
-  const navigateFun = (name) => {
-    console.log("========>>>>>>>",name)
-    navigate.push(name)
-  }
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -44,7 +29,15 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <h2>Welcom to Next Js</h2>
+        <h2>Welcom to Next Js Mastery</h2>
+        {/* <Image
+          className={styles.logo}
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        /> */}
       </div>
 
       <div className={styles.grid}>
@@ -97,26 +90,6 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-      {/* What is Linking */}
-      <div className="linking" style={flexContainerStyle}>
-        <h3><Link href="about">Go to About Us Page</Link></h3>
-        <h3><Link href="auth">Go to Auth Us Page</Link></h3>
-        <h3><Link href="contact">Go to Contact Us Page</Link></h3>
-      </div>
-       {/* What is Navigation */}
-      <div className="linking" style={flexContainerStyle}>
-        {/* <button onClick={()=>navigate.push("/about")}>Go to About</button>
-        <button onClick={()=>navigate.push("/auth")}>Go to Auth</button>
-        <button onClick={()=>navigate.push("/contact")}>Go to contact</button> */}
-<<<<<<< HEAD
-        <button onClick={()=>navigateFun("/about")}>Go to About</button>
-=======
-         <button onClick={()=>navigateFun("/about")}>Go to About</button>
->>>>>>> 7134f99bc110e03d2b4f7719bfdf364854ea7e46
-        <button onClick={()=>navigateFun("/contact")}>Go to contact</button>
-        <button onClick={()=>navigateFun("/auth")}>Go to Auth</button>
-
       </div>
     </main>
   );
