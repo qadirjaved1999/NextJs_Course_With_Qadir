@@ -109,9 +109,19 @@ export default function Home() {
         {/* <button onClick={()=>navigate.push("/about")}>Go to About</button>
         <button onClick={()=>navigate.push("/auth")}>Go to Auth</button>
         <button onClick={()=>navigate.push("/contact")}>Go to contact</button> */}
+<<<<<<< HEAD
          <button className="btn" onClick={()=>navigateFun("/about")}>Go to About</button>
         <button className="btn" onClick={()=>navigateFun("/contact")}>Go to contact</button>
         <button className="btn" onClick={()=>navigateFun("/auth")}>Go to Auth</button>
+=======
+<<<<<<< HEAD
+        <button onClick={()=>navigateFun("/about")}>Go to About</button>
+=======
+         <button onClick={()=>navigateFun("/about")}>Go to About</button>
+>>>>>>> 7134f99bc110e03d2b4f7719bfdf364854ea7e46
+        <button onClick={()=>navigateFun("/contact")}>Go to contact</button>
+        <button onClick={()=>navigateFun("/auth")}>Go to Auth</button>
+>>>>>>> 481550ef6cb9fac88d698a47d7dba675f112b1ec
 
       </div>
     </main>
