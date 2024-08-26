@@ -109,9 +109,9 @@ export default function Home() {
         {/* <button onClick={()=>navigate.push("/about")}>Go to About</button>
         <button onClick={()=>navigate.push("/auth")}>Go to Auth</button>
         <button onClick={()=>navigate.push("/contact")}>Go to contact</button> */}
-         <button onClick={()=>navigateFun("/about")}>Go to About</button>
-        <button onClick={()=>navigateFun("/contact")}>Go to contact</button>
-        <button onClick={()=>navigateFun("/auth")}>Go to Auth</button>
+         <button className="btn" onClick={()=>navigateFun("/about")}>Go to About</button>
+        <button className="btn" onClick={()=>navigateFun("/contact")}>Go to contact</button>
+        <button className="btn" onClick={()=>navigateFun("/auth")}>Go to Auth</button>
 
       </div>
     </main>
